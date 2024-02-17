@@ -1,6 +1,6 @@
 class compte {
-    private String titulaire;
-    private double solde;
+    protected String titulaire;
+    protected double solde;
 
     public compte(String titulaire) {
         this.titulaire = titulaire;

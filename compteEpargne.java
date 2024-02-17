@@ -1,5 +1,5 @@
 public class compteEpargne extends compte {
-    private double benefice;
+    protected double benefice;
 
     public compteEpargne(String titulaire, double solde, double benefice) {
         super(titulaire, solde);
@@ -16,7 +16,7 @@ public class compteEpargne extends compte {
 
     @Override
     public String toString() {
-        return "compteEpargne [benefice=" + benefice + "] | " + super.toString();
+        return "compteEpargne [ titulaire = " + titulaire +", solde = "+solde +", benefice = "+benefice+" ]";
     }
 
 }
