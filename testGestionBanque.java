@@ -1,4 +1,4 @@
-public class test {
+public class testGestionBanque {
     public static void main(String[] args) {
         compte c1 = new compte ("Ammar",1500);
         compte c2 = new compte ("Ali", 2000);

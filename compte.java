@@ -27,11 +27,11 @@ class compte {
         this.titulaire = titulaire;
     }
 
-    public void ajouterSolde(double montant) {
+    public void crediter(double montant) {
         this.solde += montant;
     }
 
-    public void retirerSolde(double montant) throws soldeInsuffisantException {
+    public void debiter(double montant) throws soldeInsuffisantException {
         if (montant > this.solde) {
             throw new soldeInsuffisantException();
         }

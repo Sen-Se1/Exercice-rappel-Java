@@ -3,20 +3,20 @@ import java.util.List;
 
 public class banque {
     private String nom;
-    private List<compte> compteList;
+    private List<compte> listCompte;
 
     public banque(String nom) {
         this.nom = nom;
-        this.compteList = new ArrayList<compte>();
+        this.listCompte = new ArrayList<compte>();
     }
 
     public void ajouterCompte(compte compte) {
-        this.compteList.add(compte);
+        this.listCompte.add(compte);
 
     }
 
     @Override
     public String toString() {
-        return this.compteList.toString();
+        return this.listCompte.toString();
     }
 }
